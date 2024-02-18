@@ -1,5 +1,3 @@
-import '../css/global.css'
-
 document.addEventListener( 'DOMContentLoaded', function () {
     new Splide( '#image-carousel', {
         width : '100vw',
@@ -53,6 +51,14 @@ chart.title("The Structure of Electricity Generation and Sales");
 chart.container("container");
 chart.background("#27252A");
 // chart.header().background("#3E3D40");
+chart.normal().fill('#B46FC2');
+chart.hovered().fill('#44008B', 0.8);
+chart.selected().fill('#0A0068', 0.8);
+chart.selected().hatchFill("forward-diagonal", '#282147', 2, 20);
+chart.labels().useHtml(true);
+chart.labels().format(
+  "<span style='font-size: 24px; color: #fff'>{%name}</span><br>{%value}"
+);
 
 chart.draw();
 
