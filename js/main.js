@@ -6,7 +6,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
         arrows: false,      // Hide arrows
         autoplay: true,     // Enable autoplay
         interval: 3000,     // Set the interval (in milliseconds) for changing slides
-    } ).mount();
+    } ).mount().play();
 } );
 
 
