@@ -152,11 +152,16 @@ header {
   width: 50%;
 }
 
-#map {
+#map,
+#map2,
+#map3,
+#map4 {
   width: 100%;
   height: 600px;
   position: relative;
 }
+
+
 
 .legend {
   position: absolute;
@@ -189,7 +194,8 @@ header {
 .legend-5,
 .legend-6,
 .legend-7,
-.legend-8 {
+.legend-8,
+.legend-9 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,7 +203,7 @@ header {
 
 .legend-6 span,
 .legend-7 span {
-  width: 20px; /* Length of the line */
+  width: 15px; /* Length of the line */
   height: 2px; /* Thickness of the line */
   display: inline-block;
   margin-right: 10px; /* Adjust spacing between line and circles */
@@ -217,7 +223,7 @@ header {
 .legend-8 span.cross::after {
   content: '';
   position: absolute;
-  width: 20px; /* Length of the cross arms */
+  width: 15px; /* Length of the cross arms */
   height: 2px; /* Thickness of the cross arms */
   background-color: #000; /* Color of the cross arms */
 }
@@ -237,6 +243,37 @@ header {
 .legend-3 span:nth-child(1) { background-color: #ffff5c; }
 .legend-4 span:nth-child(1) { background-color: #000; }
 .legend-5 span:nth-child(1) { background-color: #80ff5c; }
+
+.legend-1 .white {
+  background-color: #fff !important;
+}
+
+.legend-6 .blue {
+  background-color: blue !important;
+}
+
+.legend-1 .green {
+  background-color: #80ff5c;
+}
+
+.legend-1 .yellow {
+  background-color: #ffff5c;
+}
+
+.legend-9 span {
+  border-radius: 0;
+  background: #0db2d3;
+}
+
+.legend-9 .grad {
+  background: linear-gradient(to right, #5b1e62, #851e5a, #cb1b4f, #e97c16, #f6ac84, #faebdd);
+}
+
+.grad-desc {
+  font-size: 10px;
+  opacity: .5;
+  padding-left: 4px;
+}
 
 .divider__text {
   display: flex;
@@ -314,13 +351,18 @@ header {
   color: #6E0DFF
 }
 
-.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip, .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
   border-bottom-color: #000b3f !important;
+  border-top-color: #000b3f !important;
 }
 
 .mapboxgl-popup-content
  {
   background-color: #000b3f !important;
+}
+
+tspan {
+  fill: rgb(255, 255, 255) !important;
 }
 
 .chart {
@@ -335,12 +377,19 @@ header {
   gap: 1rem;
 }
 
-#container {
-  width: 100%;
+.charts {
+  display: flex;
+}
+.charts > * {
+  width: 33%;
   height: 100vh;
   margin: 0;
   padding: 0;
 }
+#container {
+  /* width: 100%; */
+}
+
 
 .anychart-credits {
   display: none;
@@ -427,7 +476,7 @@ header {
 }
 
 .footer {
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 
 .footer-container {

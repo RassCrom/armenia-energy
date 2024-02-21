@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Assuming your CSV file is named 'your_file.csv'
-df = pd.read_csv(r"D:\projects\web\armenia_re\armenia-re\assets\data\xlsx\amenia-energy.csv")
+df = pd.read_csv(r"D:\projects\web\armenia_re\armenia-re\assets\data\xlsx\azer.csv")
 
 # Extracting data for the required years (1991 to 2022)
 df_selected_years = df.iloc[:, :33]
