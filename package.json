@@ -14,6 +14,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "csv-parse": "^5.5.3"
+    "csv-parse": "^5.5.3",
+    "mapboxgl-legend": "^1.14.0"
   }
 }

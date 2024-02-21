@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +48,19 @@
       <main class="main">
         <div class="main-container">
           <section class="map">
-            <iframe width='100%' height='600px' src="https://api.mapbox.com/styles/v1/rasscrom/clssj4t6u00aa01pk31m92ood.html?title=false&access_token=pk.eyJ1IjoicmFzc2Nyb20iLCJhIjoiY2wyNzlrcDY2MGk5cDNqcW5wZW9mZW5kciJ9.zdI6zJ4KbGx-V8mq1KoUCg&zoomwheel=false#7.24/40.005/45.701" title="armenia-main" style="border:none;"></iframe>
+            <div id="map">
+              <div class="legend">
+                <div class="legend-1"><span></span>Hydro power plant</div>
+                <div class="legend-2"><span></span>Gas power plant</div>
+                <div class="legend-3"><span></span>Solar power plant</div>
+                <div class="legend-4"><span></span>Nuclear power plant</div>
+                <div class="legend-5"><span></span>Wind power plant</div>
+                <div class="legend-6"><span></span>Tube</div>
+                <div class="legend-7"><span></span>Electricity</div>
+                <div class="legend-8"><span class="cross"></span>City</div>
+              </div>
+            </div>
+            <!-- <iframe width='100%' height='600px' src="https://api.mapbox.com/styles/v1/rasscrom/clssj4t6u00aa01pk31m92ood.html?title=false&access_token=pk.eyJ1IjoicmFzc2Nyb20iLCJhIjoiY2wyNzlrcDY2MGk5cDNqcW5wZW9mZW5kciJ9.zdI6zJ4KbGx-V8mq1KoUCg&zoomwheel=false#7.24/40.005/45.701" title="armenia-main" style="border:none;"></iframe> -->
           </section>
           <section class="intro">
             <div class="intro-heading">
@@ -116,6 +131,11 @@ The high indicators of the Biomass and waste category in some countries are expl
           </section>
 
           <section class="chart">
+            
+            <div class="current-heading">
+              <h3 class="current-heading__subhead">Special chapter<span>.</span></h3>
+              <h1 class="current-heading__head">Energy generation by countries</h1>
+            </div>
             <div id="container"></div>
             <div id="container2"></div>
             <div id="container3"></div>
@@ -289,5 +309,6 @@ Forming the foundation of Armenia’s renewable energy system as of 2022 were 18
     <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-treemap.min.js"></script>
     <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/map.js"></script>
   </body>
 </html>

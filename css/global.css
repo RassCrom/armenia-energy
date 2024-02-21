@@ -152,6 +152,92 @@ header {
   width: 50%;
 }
 
+#map {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.legend {
+  position: absolute;
+  top: .7rem;
+  left: .7rem;
+  background-color: #000b3f;
+
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* width: 100px; */
+  padding: 1rem; /* Adjust as needed */
+}
+
+.legend span {
+  width: 15px; /* Diameter of the circle */
+  height: 15px; /* Diameter of the circle */
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between circles */
+}
+
+.legend-1,
+.legend-2,
+.legend-3,
+.legend-4,
+.legend-5,
+.legend-6,
+.legend-7,
+.legend-8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.legend-6 span,
+.legend-7 span {
+  width: 20px; /* Length of the line */
+  height: 2px; /* Thickness of the line */
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between line and circles */
+  background-color: #b80028; /* Color of the line */
+  border-radius: 0%;
+}
+
+.legend-7 span {
+  background-color: #000;
+}
+
+.legend-8 span.cross {
+  height: 0;
+}
+
+.legend-8 span.cross::before,
+.legend-8 span.cross::after {
+  content: '';
+  position: absolute;
+  width: 20px; /* Length of the cross arms */
+  height: 2px; /* Thickness of the cross arms */
+  background-color: #000; /* Color of the cross arms */
+}
+
+.legend-8 span.cross::before {
+  transform: rotate(45deg);
+}
+
+.legend-8 span.cross::after {
+  transform: rotate(-45deg);
+}
+
+
+/* You can customize the colors as needed */
+.legend-1 span:nth-child(1) { background-color: #00e3e7; }
+.legend-2 span:nth-child(1) { background-color: #e7000c; }
+.legend-3 span:nth-child(1) { background-color: #ffff5c; }
+.legend-4 span:nth-child(1) { background-color: #000; }
+.legend-5 span:nth-child(1) { background-color: #80ff5c; }
+
 .divider__text {
   display: flex;
   justify-content: space-between;
@@ -228,8 +314,18 @@ header {
   color: #6E0DFF
 }
 
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+  border-bottom-color: #000b3f !important;
+}
+
+.mapboxgl-popup-content
+ {
+  background-color: #000b3f !important;
+}
+
 .chart {
   display: flex;
+  flex-direction: column;
 }
 
 .current {

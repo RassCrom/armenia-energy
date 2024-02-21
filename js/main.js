@@ -18,8 +18,7 @@ var dataSet = [
 anychart.onDocumentReady(function () {});
 
 var chart = anychart.treeMap(dataSet, "as-tree");
-
-chart.title("Armenia");
+chart.title('Armenia')
 chart.container("container");
 chart.background("#27252A");
 // chart.header().background("#3E3D40");
