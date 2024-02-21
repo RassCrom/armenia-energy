@@ -28,7 +28,7 @@ chart.selected().fill('#0A0068', 0.8);
 chart.selected().hatchFill("forward-diagonal", '#282147', 2, 20);
 chart.labels().useHtml(true);
 chart.labels().format(
-  "<span style='font-size: 24px; color: #fff'>{%name}</span><br>{%value}"
+  "<span style='font-size: 20px; color: #fff'>{%name}</span><br>{%value}"
 );
 
 chart.draw();
@@ -51,7 +51,7 @@ chart.selected().fill('#0A0068', 0.8);
 chart.selected().hatchFill("forward-diagonal", '#282147', 2, 20);
 chart.labels().useHtml(true);
 chart.labels().format(
-  "<span style='font-size: 24px; color: #fff'>{%name}</span><br>{%value}"
+  "<span style='font-size: 20px; color: #fff'>{%name}</span><br>{%value}"
 );
 
 chart.draw();
@@ -72,7 +72,7 @@ chart.selected().fill('#0A0068', 0.8);
 chart.selected().hatchFill("forward-diagonal", '#282147', 2, 20);
 chart.labels().useHtml(true);
 chart.labels().format(
-  "<span style='font-size: 24px; color: #fff'>{%name}</span><br>{%value}"
+  "<span style='font-size: 20px; color: #fff'>{%name}</span><br>{%value}"
 );
 
 chart.draw();
