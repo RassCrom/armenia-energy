@@ -1,6 +1,3 @@
-import LegendControl from 'mapboxgl-legend';
-import 'mapboxgl-legend/dist/style.css';
-
 mapboxgl.accessToken = 'pk.eyJ1IjoicmFzc2Nyb20iLCJhIjoiY2wyNzlrcDY2MGk5cDNqcW5wZW9mZW5kciJ9.zdI6zJ4KbGx-V8mq1KoUCg';
 const map = new mapboxgl.Map({
     container: 'map',
@@ -8,9 +5,6 @@ const map = new mapboxgl.Map({
     style: 'mapbox://styles/rasscrom/clssj4t6u00aa01pk31m92ood',
     projection: 'globe',
 });
-
-const legend = new LegendControl();
-map.addControl(legend, 'top-left');
 
 map.addControl(new mapboxgl.NavigationControl());
 map.addControl(new mapboxgl.ScaleControl());
@@ -43,5 +37,3 @@ map.on('mouseenter', ['armenia-power-hydro-agjnv3'], function () {
 map.on('mouseleave', ['armenia-power-hydro-agjnv3'], function () {
     map.getCanvas().style.cursor = '';
 });
-
-// layers = []
