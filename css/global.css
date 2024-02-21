@@ -617,7 +617,7 @@ tspan {
   object-fit: cover; /* Ensure the images cover the entire slide */
 }
 
-/* Media query for smaller screens (e.g., phones) */275
+/* Media query for smaller screens (e.g., phones) */
 @media screen and (max-width: 767px) {
   .splide__slide img {
     object-fit: scale-down; /* Ensure the images cover the entire slide */

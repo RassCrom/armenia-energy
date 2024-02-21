@@ -76,3 +76,5 @@ chart.labels().format(
 );
 
 chart.draw();
+
+AOS.init();
