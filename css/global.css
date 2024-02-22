@@ -479,7 +479,8 @@ tspan {
 }
 
 .footer {
-  margin: 5rem 0;
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #27252A, #16092A);
 }
 
 .footer-container {
