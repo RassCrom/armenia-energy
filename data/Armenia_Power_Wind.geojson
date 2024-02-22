@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "Armenia_Power_Wind",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Size": 2, "energy_annum": 296.8, "oblast": "Lori region", "power": 2.6, "name": "Lori 1 wind power plant", "photo": "https://upload.wikimedia.org/wikipedia/commons/5/51/Wind_Power_in_Armenia_at_Pushkin_Pass.jpg", "year\n": 2005, "status": "Working" }, "geometry": { "type": "Point", "coordinates": [ 44.432675250000102, 40.91036098399519 ] } },
+{ "type": "Feature", "properties": { "Size": 1, "energy_annum": 320000.0, "oblast": "Aragatsotn region", "power": 200.0, "name": "Ayg-1 wind power plant", "year\n": 2025, "status": "Plan" }, "geometry": { "type": "Point", "coordinates": [ 44.2288081, 40.6329538 ] } },
+{ "type": "Feature", "properties": { "Size": 1, "oblast": "Lori region", "power": 22.5, "name": "Lori 1 wind power plant", "status": "Plan" }, "geometry": { "type": "Point", "coordinates": [ 44.4336788, 40.910061 ] } },
+{ "type": "Feature", "properties": { "Size": 1, "oblast": "Lori region", "power": 22.5, "name": "Lori 1 wind power plant", "status": "Plan" }, "geometry": { "type": "Point", "coordinates": [ 44.4317946, 40.9108765 ] } },
+{ "type": "Feature", "properties": { "Size": 1, "oblast": "Lori region", "power": 22.5, "name": "Lori 1 wind power plant", "status": "Plan" }, "geometry": { "type": "Point", "coordinates": [ 44.4295529, 40.9115373 ] } },
+{ "type": "Feature", "properties": { "Size": 1, "oblast": "Lori region", "power": 22.5, "name": "Lori 1 wind power plant", "status": "Plan" }, "geometry": { "type": "Point", "coordinates": [ 44.4283992, 40.9125496 ] } },
+{ "type": "Feature", "properties": { "Size": 1, "energy_annum": 110000.0, "oblast": "Gegharkunik region", "power": 55.0, "name": "Masrik-1 wind power plant", "year\n": 2024, "status": "Plan" }, "geometry": { "type": "Point", "coordinates": [ 45.9760965, 40.2255906 ] } }
+]
+}

@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Armenia_Power_Nuclear",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Size": 2, "fuel_type": "Uranium", "units_number\n": 2, "power": 407.5, "\nphoto": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Metsamor_NPP_aerial_view_1.jpg?uselang=ru", "\noblast": "Armavir region", "year\n": 1977, "name\n": "Armenian NPP", "status": "Working" }, "geometry": { "type": "Point", "coordinates": [ 44.147243970077056, 40.180250753489759 ] } }
+]
+}

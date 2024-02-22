@@ -152,6 +152,11 @@ header {
   width: 50%;
 }
 
+.nuclear-img {
+  width: 100%;
+  height: auto;
+}
+
 #map,
 #map2,
 #map3,
@@ -160,8 +165,6 @@ header {
   height: 600px;
   position: relative;
 }
-
-
 
 .legend {
   position: absolute;
@@ -489,11 +492,12 @@ tspan {
 }
 
 .footer-author {
-  width: 40%;
+  width: 50%;
+  margin-right: 1rem;
 }
 
 .footer-sources {
-  width: 60%;
+  width: 50%;
 }
 
 .footer-author__head {
