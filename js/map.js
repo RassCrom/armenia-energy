@@ -12,7 +12,7 @@ map.addControl(new mapboxgl.ScaleControl());
 map.on('click', (event) => {
     // If the user clicked on one of your markers, get its information.
     const features = map.queryRenderedFeatures(event.point, {
-        layers: ['armenia-power-hydro-agjnv3'] // replace with your layer name
+        layers: ['armenia-power-hydro-agjnv3', 'armenia-power-wind-d3jqq0', 'armenia-power-solar-1uhjc5', 'armenia-power-nuclear-a6w1gi', 'armenia-power-gas-bgt9dd'] // replace with your layer name
     });
     if (!features.length) {
         return;
@@ -29,11 +29,11 @@ map.on('click', (event) => {
     ).addTo(map);
 });
 
-map.on('mouseenter', ['armenia-power-hydro-agjnv3'], function () {
+map.on('mouseenter', ['armenia-power-hydro-agjnv3', 'armenia-power-wind-d3jqq0', 'armenia-power-solar-1uhjc5', 'armenia-power-nuclear-a6w1gi', 'armenia-power-gas-bgt9dd'], function () {
     map.getCanvas().style.cursor = 'pointer';
 });
 
-map.on('mouseleave', ['armenia-power-hydro-agjnv3'], function () {
+map.on('mouseleave', ['armenia-power-hydro-agjnv3', 'armenia-power-wind-d3jqq0', 'armenia-power-solar-1uhjc5', 'armenia-power-nuclear-a6w1gi', 'armenia-power-gas-bgt9dd'], function () {
     map.getCanvas().style.cursor = '';
 });
 
