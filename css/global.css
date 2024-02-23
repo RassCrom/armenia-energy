@@ -406,14 +406,45 @@ tspan {
 
 .transition-bg {
   /* background-image: url(../assets/img/ren-bg.png); */
-  background: url(../assets/img/ren-bg.png) no-repeat center center fixed; 
+  background: url(../assets/img/rea.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
   width: 1920px;
-  height: 1080px;
+  height: 100vh;
   margin: 5rem auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transition-bg__text {
+  position: relative;
+
+  font-size: 4rem;
+  font-family: 'NicoMoji';
+  color: #fff;
+
+  line-height: 120%;
+  width: 40%;
+}
+
+.transition-bg__text .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.transition-bg__text .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
 }
 
 .solar-heading__subhead span {
@@ -615,6 +646,16 @@ tspan {
 
   .divider__text::after {
     top: -30px;
+  }
+
+  .transition-bg {
+    width: 100%;
+  }
+
+  .transition-bg__text {
+    font-size: 2rem;
+    padding: 0 1rem;
+    width: 100%;
   }
 }
 

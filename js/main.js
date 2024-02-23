@@ -78,3 +78,50 @@ chart.labels().format(
 chart.draw();
 
 AOS.init();
+
+
+var textWrapper = document.querySelector('.transition-bg__text .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function animateLetter() {
+  anime.timeline({loop: false})
+  .add({
+    targets: '.transition-bg__text .letter',
+    rotateY: [-90, 0],
+    duration: 1900,
+    delay: (el, i) => 60 * i
+  }).add({
+    targets: '.transition-bg__text',
+    opacity: 1,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 3000
+  });
+};
+
+var observer = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      // Element is in the viewport, start the animation
+      animateLetter();
+      // Stop observing once animation is triggered
+      observer.disconnect();
+    }
+  });
+}, { threshold: 0.5 }); // You can adjust the threshold based on your needs
+
+// Start observing the textWrapper
+observer.observe(textWrapper);
+
+
+
